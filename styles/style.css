@@ -77,12 +77,6 @@ body {
     -ms-user-select: none;
 }
 
-/* ----- HEADER ----- */
-
-header {
-
-}
-
 /* ----- MAIN ----- */
 
 main {
@@ -94,12 +88,10 @@ main {
     max-width: 425px;
     width: 85%;
     height: 100%;
-    /*background-color: red;*/
 }
 
 main > div:nth-child(1) {
     color: #858585;
-    /*background-color: blue;*/
 }
 
 main > div:nth-child(2) {
@@ -111,44 +103,13 @@ main > div:nth-child(2) {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 16px;
-    /*background-color: green;*/
 }
 
 a:hover {
     color: var(--accent);
 }
 
-/* ----- FOOTER ----- */
-
-footer {
-
-}
-
 /* ----- MEDIA QUERY ----- */
-
-@media (min-width: 1000px) {
-
-    header {
-
-    }
-
-    main {
-
-    }
-
-    footer {
-
-    }
-
-}
-
-@media (hover: hover) and (pointer: fine) {
-
-    .ex:hover {
-        background-color: var(--accent);
-    }
-
-}
 
 @media (prefers-color-scheme: light) {
 
