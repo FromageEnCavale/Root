@@ -1,0 +1,171 @@
+/* ----- RESET CSS ----- */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul[role='list'], ol[role='list'] {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea, select {
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
+    appearance: none;
+}
+
+:focus {
+    outline: none;
+}
+
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+input, textarea, select, button {
+    border-radius: 0;
+}
+
+/* ----- COLORS ----- */
+
+:root {
+    --background-light: #FFFFFF;
+    --background-dark: #000000;
+    --accent-light: #FF7F11;
+    --accent-dark: #FF7F11;
+    --text-light: #000000;
+    --text-dark: #FFFFFF;
+}
+
+/* ----- BODY ----- */
+
+html, body {
+    scrollbar-width: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    color: var(--text);
+    background-color: var(--background);
+    font-family: system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.noSelect {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* ----- HEADER ----- */
+
+header {
+
+}
+
+/* ----- MAIN ----- */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    max-width: 425px;
+    width: 85%;
+    height: 100%;
+    /*background-color: red;*/
+}
+
+main > div:nth-child(1) {
+    color: #858585;
+    /*background-color: blue;*/
+}
+
+main > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    /*background-color: green;*/
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+
+}
+
+/* ----- MEDIA QUERY ----- */
+
+@media (min-width: 1000px) {
+
+    header {
+
+    }
+
+    main {
+
+    }
+
+    footer {
+
+    }
+
+}
+
+@media (hover: hover) and (pointer: fine) {
+
+    .ex:hover {
+        background-color: var(--accent);
+    }
+
+}
+
+@media (prefers-color-scheme: light) {
+
+    :root {
+        --background: var(--background-light);
+        --accent: var(--accent-light);
+        --text: var(--text-light);
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --background: var(--background-dark);
+        --accent: var(--accent-dark);
+        --text: var(--text-dark);
+    }
+
+}
