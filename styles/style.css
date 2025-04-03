@@ -91,7 +91,8 @@ main {
 }
 
 main > div:nth-child(1) {
-    color: #858585;
+    color: var(--text);
+    opacity: 50%;
 }
 
 main > div:nth-child(2) {
